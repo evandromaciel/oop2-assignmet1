@@ -13,7 +13,7 @@ namespace ClassAndInheritance
 {
     internal class Program
     {
-        // adsdsaddds
+        // adsdsa
         public static List<Appliance> fillList()
         {
             List<Appliance> listapplician = new List<Appliance>();
