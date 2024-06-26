@@ -1,4 +1,4 @@
-﻿using ClassAndInheritance.Properties;
+using ClassAndInheritance.Properties;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -13,7 +13,8 @@ namespace ClassAndInheritance
 {
     internal class Program
     {
-        
+
+
         public static List<Appliance> fillList()
         {
             List<Appliance> listapplician = new List<Appliance>();
