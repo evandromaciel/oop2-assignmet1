@@ -13,7 +13,7 @@ namespace ClassAndInheritance
 {
     internal class Program
     {
-        // adsdsaddds
+        
         public static List<Appliance> fillList()
         {
             List<Appliance> listapplician = new List<Appliance>();
@@ -66,13 +66,42 @@ namespace ClassAndInheritance
             return listapplician;
 
         }
-        
+        //public static string formatForFile(Appliance app)
+        //{
+        //    string rs = "";
+        //    int id = int.Parse(app.Itemnumber.ToString().Substring(0,1));
+        //    if (id == 1)
+        //    {
+        //        Refrigerator rf = (Refrigerator)app;
+        //        rs = $"{rf.Itemnumber};{rf.Brand};{rf.Quantity};{rf.Wattage};{rf.Color};{rf.Price};{rf.Doors};{rf.Height};{rf.Width};\n";
+        //    }
+        //    else if (id == 2)
+        //    {
+        //        Vacuum vc = (Vacuum)app;
+        //        rs = $"{vc.Itemnumber};{vc.Brand};{vc.Quantity};{vc.Wattage};{vc.Color};{vc.Price};{vc.Grade};{vc.BatteryVoltage};\n";
+        //    }
+        //    else if (id == 3)
+        //    {
+        //        Microwaves mw = (Microwaves)app;
+        //        rs = $"{mw.Itemnumber};{mw.Brand};{mw.Quantity};{mw.Wattage};{mw.Color};{mw.Price};{mw.Capacity};{mw.Roomtype};\n";
+        //    }
+        //    else
+        //    {
+        //        //Dishwasher
+        //        Dishwasher dw = (Dishwasher)app;
+        //        rs = $"{dw.Itemnumber};{dw.Brand};{dw.Quantity};{dw.Wattage};{dw.Color};{dw.Price};{dw.Feature};{dw.SoundRating};\n";
+                
+        //    }
+        //    return rs;
+            
+        //}
+       
         static void Main(string[] args)
         {
             List<Appliance> listapp = fillList();
             Console.WriteLine("Welcome to Modern Appliances");
             bool flag = true;
-            while (flag==true)
+            while (flag == true)
             {
                 Console.WriteLine("How may we assist you?");
                 Console.WriteLine("1 – Check out appliance");
@@ -81,30 +110,25 @@ namespace ClassAndInheritance
                 Console.WriteLine("4 – Produce random appliance list");
                 Console.WriteLine("5 – Save & exit");
                 Console.Write("Enter option:");
-                int opt =Int32.Parse(Console.ReadLine());
+                int opt = Int32.Parse(Console.ReadLine());
                 switch (opt)
                 {
                     case 1:
                         //Check out appliance
                         Console.Write("Enter item number of an Appliance:");
                         int applicianid = Int32.Parse(Console.ReadLine());
+                        bool notexist = true;
                         foreach (Appliance app in listapp)
                         {
                             if (app.Itemnumber == applicianid)
                             {
-                                if (app.IsAvailable > 0)
-                                {
-                                    Console.WriteLine($"The appliance {app.Brand} available to be checked out.");
-                                    app.IsAvailable -= 1; 
-                                    break;
-                                }
+                                app.Checkout(applicianid);
+                                notexist = false;
                             }
-                            else
-                            {
-                                Console.WriteLine("The appliance is not available to be checked out.");
-                                break;
-                            }
-
+                        }
+                        if (notexist == true)
+                        {
+                            Console.WriteLine("The appliance is not exist!!!!.");
                         }
                         break;
                     case 2:
@@ -119,14 +143,16 @@ namespace ClassAndInheritance
                     case 5:
                         //EXIT
                         flag = false;
+                        using (StreamWriter sw = new StreamWriter(Path.GetFullPath("..\\..\\Resources\\appliances.txt")))
+                        {
+                            foreach(Appliance appl in listapp)
+                            {                               
+                                sw.Write(appl.formatForFile()+ "\n");
+                            }
+                        } 
                         break;
                 }
             }
-            //List<Appliance> listapp = fillList();
-            //foreach(Appliance app in listapp)
-            //{
-            //    Console.WriteLine(app.Color);
-            //}
       
         }
     }

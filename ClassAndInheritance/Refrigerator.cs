@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -33,9 +34,22 @@ namespace ClassAndInheritance
             get { return _width; }
             set { _width = value; }
         }
+        public enum NumsDoor
+        {
+            Double,
+            Three,
+            Four
+
+        }
+        public override string formatForFile()
+        {
+            string rs = "";
+            rs = $"{Itemnumber};{Brand};{Quantity};{Wattage};{Color};{Price};{Doors};{Height};{Width};";
+            return rs;
+        }
         public override string ToString()
         {
-            return $"Door:{_doors} \nHeight {_height}\n Width:{_width}";
+            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Door:{Doors} \n Height:{Height} \n Width:{Width}";
         }
     }
 }

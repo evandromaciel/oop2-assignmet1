@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,9 +26,23 @@ namespace ClassAndInheritance
             get { return _soundRating; }
             set { _soundRating = value; }
         }
+        public enum TypeSoundRating
+        {
+            Quietest,
+            Quieter,
+            Quiet,
+            Moderate
+
+        }
+        public override string formatForFile()
+        {
+            string rs = "";
+            rs = $"{Itemnumber};{Brand};{Quantity};{Wattage};{Color};{Price};{Feature};{SoundRating};";
+            return rs;
+        }
         public override string ToString()
         {
-            return $"Feature:{_feature} \n SoundRating:{_soundRating}";
+            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Feature:{Feature} \n SoundRating:{SoundRating}";
         }
     }
 }

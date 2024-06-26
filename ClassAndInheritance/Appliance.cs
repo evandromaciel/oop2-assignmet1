@@ -53,11 +53,27 @@ namespace ClassAndInheritance
             get { return _price; }
             set { _price = value; }
         }
-        public int IsAvailable
+        public bool IsAvailable()
         {
-            get { return _quantity; }
-            set { _quantity = value; }
+            if(_quantity>0)
+                return true;
+            else
+                return false;
         }
+        public void Checkout(int itemnumber)
+        {
+            if (_quantity > 0)
+            {
+                _quantity -= 1;
+                Console.WriteLine($"The appliance {_brand} available to be checked out");
+
+            }
+            else
+            {
+                Console.WriteLine("The appliance is not available to be checked out.");
+            }
+        }
+        public abstract string formatForFile();
         public override string ToString()
         {
             return $"Item number:{_itemNumber} \nBrand:{_brand}\nQuantity: {_quantity}\nWattage: {_wattage}\nColor: {_color}\nPrice: {_price}";

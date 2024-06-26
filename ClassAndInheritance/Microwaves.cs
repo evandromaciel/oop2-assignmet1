@@ -25,9 +25,15 @@ namespace ClassAndInheritance
             get { return _roomType; }
             set { _roomType = value; }
         }
+        public override string formatForFile()
+        {
+            string rs = "";
+            rs = $"{Itemnumber};{Brand};{Quantity};{Wattage};{Color};{Price};{Capacity};{Roomtype};";
+            return rs;
+        }
         public override string ToString()
         {
-            return $"Capacity:{_capacity} \n Roomtype:{_roomType}";
+            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Capacity:{Capacity} \n Roomtype:{Roomtype}";
         }
     }
 }

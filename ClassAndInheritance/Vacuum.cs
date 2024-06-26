@@ -25,5 +25,15 @@ namespace ClassAndInheritance
             get { return _batteryvoltage; }
             set { _batteryvoltage = value; }
         }
+        public override string formatForFile()
+        {
+            string rs = "";
+            rs = $"{Itemnumber};{Brand};{Quantity};{Wattage};{Color};{Price};{Grade};{BatteryVoltage};";
+            return rs;
+        }
+        public override string ToString()
+        {
+            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Feature:{Grade} \n SoundRating:{BatteryVoltage}";
+        }
     }
 }
