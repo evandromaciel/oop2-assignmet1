@@ -1,9 +1,11 @@
 using ClassAndInheritance.Properties;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Security.Cryptography;
 using System.Text;
@@ -13,8 +15,6 @@ namespace ClassAndInheritance
 {
     internal class Program
     {
-
-
         public static List<Appliance> fillList()
         {
             List<Appliance> listapplician = new List<Appliance>();
@@ -53,10 +53,7 @@ namespace ClassAndInheritance
                                         int.Parse(items[3]), items[4], double.Parse(items[5]), items[6], items[7]);
                             listapplician.Add(dishwasher);
                         }
-
-
-                    }
-                    
+                    }                    
                 }
                 catch(Exception e)
                 {
@@ -100,17 +97,21 @@ namespace ClassAndInheritance
         static void Main(string[] args)
         {
             List<Appliance> listapp = fillList();
+
+            
+            
+
             Console.WriteLine("Welcome to Modern Appliances");
             bool flag = true;
             while (flag == true)
             {
-                Console.WriteLine("How may we assist you?");
+                Console.WriteLine("\nHow may we assist you?");
                 Console.WriteLine("1 – Check out appliance");
                 Console.WriteLine("2 – Find appliances by brand");
-                Console.WriteLine("3 – Display appliances by typ");
+                Console.WriteLine("3 – Display appliances by type");
                 Console.WriteLine("4 – Produce random appliance list");
                 Console.WriteLine("5 – Save & exit");
-                Console.Write("Enter option:");
+                Console.Write("Enter option:\n");
                 int opt = Int32.Parse(Console.ReadLine());
                 switch (opt)
                 {
@@ -134,10 +135,97 @@ namespace ClassAndInheritance
                         break;
                     case 2:
                         //Find appliances by brand
+                        Console.WriteLine("Enter brand to search:");
+                        string brand = Console.ReadLine();                                    
+
+                        foreach (Appliance app in listapp)
+                        {                           
+                            if (brand.ToLower() == app.Brand.ToLower())
+                            {
+                                Console.WriteLine($"\n{app.ToString()}");
+                            }
+                        }
                         break;
                     case 3:
                         //Display appliances by type
-                        break;
+                        Console.WriteLine("\nAppliance Types");
+                        Console.WriteLine("1 - Refrigerators");
+                        Console.WriteLine("2 - Vacuums");
+                        Console.WriteLine("3 - Microwaves");
+                        Console.WriteLine("4 - Dishwasers");
+                        int appType = Int32.Parse(Console.ReadLine());                  
+
+                        switch (appType)
+                        {
+                            case 1:
+                                
+                                Console.WriteLine("\nEnter number of doors: 2 (double door), 3 (three doors) or 4 (four doors):");
+                                string doors = Console.ReadLine();
+                               
+                                foreach (Appliance app in listapp)
+                                {
+                                    
+                                    if (appType.ToString() == $"{app.Itemnumber.ToString()[0]}")
+                                    {
+                                        string[] refri = app.formatForFile().Split(';');
+                                        if (refri[6] == $"{doors}")
+                                        {
+                                            Console.WriteLine($"\n{app.ToString()}");
+                                        }                                            
+                                    }
+                                }
+                                 break;
+
+                            case 2:
+                                Console.WriteLine("\nEnter battery voltage value. 18 V(low) or 24 V(high)");
+                                string voltage = Console.ReadLine();
+
+                                foreach (Appliance app in listapp)
+                                {
+                                    if (appType.ToString() == $"{app.Itemnumber.ToString()[0]}")
+                                    {
+                                        string[] vacuum = app.formatForFile().Split(';');
+                                        if (vacuum[7] == $"{voltage}")
+                                        {
+                                            Console.WriteLine($"\n{app.ToString()}");
+                                        }
+                                    }
+                                }
+                                break;
+
+                            case 3:
+                                Console.WriteLine("\nRoom where the microwave will be installed: K (kitchen) or W (work site):");
+                                string room = Console.ReadLine();
+                                foreach (Appliance app in listapp)
+                                {
+                                    if (appType.ToString() == $"{app.Itemnumber.ToString()[0]}")
+                                    {
+                                        string[] microwave = app.formatForFile().Split(';');
+                                        if (microwave[7].ToLower() == $"{room.ToLower()}")
+                                        {
+                                            Console.WriteLine($"\n{app.ToString()}");
+                                        }
+                                    }
+                                }
+                                break;
+                            case 4:
+                                Console.WriteLine("\nEnter the sound rating of the dishwasher: Qt (Quietest), Qr (Quieter), Qu(Quiet) or M (Moderate):");
+                                string volume = Console.ReadLine();
+                                foreach (Appliance app in listapp)
+                                {
+                                    if ("4" == $"{app.Itemnumber.ToString()[0]}" || "5" == $"{app.Itemnumber.ToString()[0]}")
+                                    {
+                                        string[] dishwasher = app.formatForFile().Split(';');                                        
+                                        if (dishwasher[7].ToLower() == $"{volume.ToLower()}")
+                                        {
+                                            Console.WriteLine($"\n{app.ToString()}");
+                                        }
+                                    }
+                                }
+                                break;
+                            
+                        }                 
+                    break;
                     case 4:
                         //Produce random appliance list
                         break;

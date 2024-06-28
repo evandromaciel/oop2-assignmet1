@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Dishwasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Vacuum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Vacuum.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Refrigerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Refrigerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Microwaves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Microwaves.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:ClassAndInheritance\\Appliance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Vacuum.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Vacuum.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Vacuum.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Vacuum.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Vacuum.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACMAAAC0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:36:12.904Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Refrigerator.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Refrigerator.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Refrigerator.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Refrigerator.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Refrigerator.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAADQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:36:12.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Microwaves.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Microwaves.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Microwaves.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Microwaves.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Microwaves.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:36:11.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Program.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Program.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Program.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Program.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAAAN4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T05:58:09.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Appliance.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Appliance.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Appliance.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Appliance.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Appliance.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAEsAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:32:54.999Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dishwasher.cs",
+              "DocumentMoniker": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Dishwasher.cs",
+              "RelativeDocumentMoniker": "ClassAndInheritance\\Dishwasher.cs",
+              "ToolTip": "C:\\Software Development - SAIT\\Object Oriented Programming 2\\Group Assignment\\Assignment 1\\oop2-tam\\oop2-assignmet1\\ClassAndInheritance\\Dishwasher.cs",
+              "RelativeToolTip": "ClassAndInheritance\\Dishwasher.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABIAAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:17:18.838Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

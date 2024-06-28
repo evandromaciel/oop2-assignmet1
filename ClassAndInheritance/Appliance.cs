@@ -23,7 +23,7 @@ namespace ClassAndInheritance
             _color = color;
             _price = price;
         }
-        public int Itemnumber 
+        public int Itemnumber
         {
             get { return _itemNumber; }
             set { _itemNumber = value; }
@@ -55,7 +55,7 @@ namespace ClassAndInheritance
         }
         public bool IsAvailable()
         {
-            if(_quantity>0)
+            if (_quantity > 0)
                 return true;
             else
                 return false;
@@ -73,6 +73,7 @@ namespace ClassAndInheritance
                 Console.WriteLine("The appliance is not available to be checked out.");
             }
         }
+      
         public abstract string formatForFile();
         public override string ToString()
         {

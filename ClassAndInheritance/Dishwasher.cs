@@ -32,7 +32,6 @@ namespace ClassAndInheritance
             Quieter,
             Quiet,
             Moderate
-
         }
         public override string formatForFile()
         {
@@ -42,7 +41,7 @@ namespace ClassAndInheritance
         }
         public override string ToString()
         {
-            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Feature:{Feature} \n SoundRating:{SoundRating}";
+            return $"Item:{Itemnumber} \nBrand:{Brand} \nQuantity: {Quantity} \nWattage:{Wattage} \nColor:{Color} \nPrice:{Price} \nFeature:{Feature} \nSoundRating:{SoundRating}";
         }
     }
 }

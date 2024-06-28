@@ -33,7 +33,8 @@ namespace ClassAndInheritance
         }
         public override string ToString()
         {
-            return $"Item:{Itemnumber} \n Brand:{Brand} \n Quantity: {Quantity} \n Wattage:{Wattage} \n Color:{Color} \n Price:{Price} \n Capacity:{Capacity} \n Roomtype:{Roomtype}";
+            return $"Item:{Itemnumber} \nBrand:{Brand} \nQuantity: {Quantity} \nWattage:{Wattage} \nColor:{Color} \nPrice:{Price} \nCapacity:{Capacity} \nRoomtype:{Roomtype}";
         }
     }
 }
+    
