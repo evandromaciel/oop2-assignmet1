@@ -62,7 +62,6 @@ namespace ClassAndInheritance
         {
             return $"Item number:{_itemNumber} \nBrand:{_brand}\nQuantity: {_quantity}\nWattage: {_wattage}\nColor: {_color}\nPrice: {_price}";
         }
-        //I'm doing a GitHUb test
-
+     
     }
 }
